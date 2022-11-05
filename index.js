@@ -21,3 +21,6 @@ if (age > 18) {
 // if (gender === "жен"); {
 //     console.log('Вам направо')
 // }
+
+const isAdmin = true;
+console.log(`Добро пожаловать : ${ isAdmin ? 'Администратор' : 'Пользователь' }`);
