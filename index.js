@@ -24,3 +24,34 @@ if (age > 18) {
 
 const isAdmin = true;
 console.log(`Добро пожаловать : ${ isAdmin ? 'Администратор' : 'Пользователь' }`);
+
+const typeUser = 'admin'; // user, quest, bot
+
+switch (typeUser) {
+    case 'admin':
+        console.log('Вы администратор');
+        break;
+    case 'user':
+        console.log('Вы пользователь');
+        break;
+    case 'quest':
+        console.log('Вы гость');
+        break;
+    case 'bot':
+        console.log('Вы бот');
+        break;
+    default: 
+        console.log('Неизвестный тип пользователя');
+        break;          
+}
+
+// Выести на экран числа от 1 до 10 через запятую.
+let i = 0;
+const lastNumber = 10;
+let message = " ";
+
+while (++i <= lastNumber) {
+    
+    message += `${i}${i !== lastNumber ? ", " : ""}`;
+}  
+    console.log(message);
